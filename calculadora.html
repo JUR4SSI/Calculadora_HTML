@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="funcoes.js" defer></script>
+
+        <title>Calculadora</title>
+    </head>
+
+    <body>
+        <main>
+            <h1>Calculadora</h1>
+
+            <output id="display">0</output>
+
+            <div class="botoes">
+                <button onclick="limpar()">C</button>
+                <button onclick="apagar()">←</button>
+                <button onclick="porcentagem()">%</button>
+                <button onclick="operadorPressionado('/')">÷</button>
+
+                <button onclick="numeroPressionado(7)">7</button>
+                <button onclick="numeroPressionado(8)">8</button>
+                <button onclick="numeroPressionado(9)">9</button>
+                <button onclick="operadorPressionado('*')">×</button>
+
+                <button onclick="numeroPressionado(4)">4</button>
+                <button onclick="numeroPressionado(5)">5</button>
+                <button onclick="numeroPressionado(6)">6</button>
+                <button onclick="operadorPressionado('-')">-</button>
+
+                <button onclick="numeroPressionado(1)">1</button>
+                <button onclick="numeroPressionado(2)">2</button>
+                <button onclick="numeroPressionado(3)">3</button>
+                <button onclick="operadorPressionado('+')">+</button>
+
+                <button onclick="trocarSinal()">±</button>
+                <button onclick="numeroPressionado(0)">0</button>
+                <button onclick="decimalPressionado()">.</button>
+                <button class="btn_raiz" onclick="raizQuadrada()">√</button>
+                
+                <button class="btn_igual" onclick="calcular()">=</button>
+            </div>
+        </main>
+    </body>
+</html>
